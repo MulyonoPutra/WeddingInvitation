@@ -63,6 +63,17 @@
   font-size: 34px;
 }
 
+.icons {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  text-align: center;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (max-width: 768px) {
   .bg-images {
     background: url("/assets/images/bg-mobile.jpg");
@@ -102,5 +113,16 @@
     border-radius: 20px !important;
     font-family: "Caveat";
     width: 120px;
+  }
+
+  .icons {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

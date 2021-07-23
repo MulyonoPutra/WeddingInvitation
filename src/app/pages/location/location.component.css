@@ -80,6 +80,17 @@
   margin-right: 10px;
 }
 
+.arrow-icons {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  text-align: center;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .text {
   float: left;
   font-family: "Caveat";

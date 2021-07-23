@@ -1,0 +1,101 @@
+.bg-images {
+  background: url("https://www.kibrispdr.org/data/vintage-wedding-background-7.jpg");
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  position: fixed;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  background-repeat: no-repeat repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  text-align: center;
+  font-family: "Caveat";
+  font-size: 34px !important;
+  margin: 50px;
+}
+
+.messages {
+  text-align: center;
+  font-family: "Caveat";
+  font-size: 24px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+  font-family: "digital-font";
+  font-size: 50px;
+}
+
+.day-text,
+.hour-text,
+.minute-text,
+.second-text {
+ font-family: "Caveat";
+  font-size: 20px;
+}
+
+.card {
+  background: url("https://www.kibrispdr.org/data/vintage-wedding-background-7.jpg");
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* overflow-x: scroll;
+  overflow-y: scroll; */
+  background-repeat: no-repeat repeat;
+  background-size: cover;
+  border: 0px solid !important;
+  border-radius: 20px;
+}
+
+.wedding-rings {
+  height: 100px;
+  width: 100px;
+}
+
+.icons {
+  height: 30px;
+  width: 30px;
+  float: left;
+  margin-right: 10px;
+}
+
+.text {
+  float: left;
+  font-family: "Caveat";
+  font-size: 20px;
+}
+
+.addresses {
+  margin-left: -24px;
+  margin-right: 10px;
+  font-family: "Caveat";
+  font-size: 20px;
+}
+
+
+agm-map {
+  height: 350px;
+    border: 0px solid !important;
+  border-radius: 20px;
+}

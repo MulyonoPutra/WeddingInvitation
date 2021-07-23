@@ -1,0 +1,118 @@
+<div class="container">
+  <div class="bg-images">
+    <div class="title">
+      <h3>Save The Date</h3>
+    </div>
+    <div class="messages">
+      <p>
+        Dengan memohon rahmat dan ridho Allah SWT, kami mengundang
+        Bapak/Ibu/Saudara/i, untuk menghadiri resepsi pernikahan kami.
+      </p>
+      <p>Yang InsyaAllah akan Dilaksanakan pada:</p>
+    </div>
+    <div class="container">
+      <!-- Countdown -->
+      <div class="row countdown">
+        <div class="col">
+          <p class="day">{{ days }}</p>
+          <p class="day-text">Day</p>
+        </div>
+        <div class="col">
+          <p class="hour">{{ hours }}</p>
+          <p class="hour-text">Hour</p>
+        </div>
+        <div class="col">
+          <p class="minute">{{ minutes }}</p>
+          <p class="minute-text">Minute</p>
+        </div>
+        <div class="col">
+          <p class="second">{{ seconds }}</p>
+          <p class="second-text">Seconds</p>
+        </div>
+      </div>
+
+      <!-- Akad -->
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <img
+            src="/assets/icons/wedding-rings.svg"
+            alt=""
+            class="wedding-rings"
+          />
+          <h5 class="card-title">Akad</h5>
+
+          <div class="d-flex justify-content-start">
+            <img src="/assets/icons/to-do-list.svg" alt="" class="icons" />
+            <p class="text">Minggu, 6 Juni 2021</p>
+          </div>
+
+          <div class="d-flex justify-content-start">
+            <img src="/assets/icons/back-in-time.svg" alt="" class="icons" />
+            <p class="text">Pukul 08.00 s/d 10.00 WIB</p>
+          </div>
+
+          <div class="d-flex justify-content-start">
+            <img src="/assets/icons/pin.svg" alt="" class="icons" />
+            <p class="addresses">
+              btn pepabri kp cijeuray rt 003/14, Kp. Parung Jambu, Cigudeg, Kec.
+              Cigudeg, Bogor, Jawa Barat 16660
+            </p>
+          </div>
+
+          <div class="d-flex justify-content-start">
+            <img src="/assets/icons/bookmark.svg" alt="" class="icons" />
+            <p class="addresses">
+              Wajib menggunakan masker sesuai protokol kesehatan.
+            </p>
+          </div>
+        </div>
+      </div>
+      &nbsp;
+      <!-- Resepsi -->
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <img
+            src="/assets/icons/wedding-couple.svg"
+            alt=""
+            class="wedding-rings"
+          />
+          <h5 class="card-title">Akad</h5>
+
+          <div class="d-flex justify-content-start">
+            <img src="/assets/icons/to-do-list.svg" alt="" class="icons" />
+            <p class="text">Minggu, 6 Juni 2021</p>
+          </div>
+
+          <div class="d-flex justify-content-start">
+            <img src="/assets/icons/back-in-time.svg" alt="" class="icons" />
+            <p class="text">Pukul 08.00 s/d 10.00 WIB</p>
+          </div>
+
+          <div class="d-flex justify-content-start">
+            <img src="/assets/icons/pin.svg" alt="" class="icons" />
+            <p class="addresses">
+              btn pepabri kp cijeuray rt 003/14, Kp. Parung Jambu, Cigudeg, Kec.
+              Cigudeg, Bogor, Jawa Barat 16660
+            </p>
+          </div>
+
+          <div class="d-flex justify-content-start">
+            <img src="/assets/icons/bookmark.svg" alt="" class="icons" />
+            <p class="addresses">
+              Wajib menggunakan masker sesuai protokol kesehatan.
+            </p>
+          </div>
+        </div>
+      </div>
+      &nbsp;
+
+      <div class="card">
+        <div class="card-body">
+          <agm-map [latitude]="lat" [longitude]="lng">
+            <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+          </agm-map>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

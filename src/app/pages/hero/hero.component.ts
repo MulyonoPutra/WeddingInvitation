@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-hero',
@@ -7,10 +8,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./hero.component.css'],
 })
 export class HeroComponent implements OnInit {
-  constructor(private router: Router) {}
+  
+  constructor(private router: Router, private spinner: NgxSpinnerService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.spinner.show();
 
+    setTimeout(() => {
+      /** spinner ends after 5 seconds */
+      this.spinner.hide();
+    }, 1000);
+  }
 
   gotoHome() {
     this.router.navigate(['/home']);

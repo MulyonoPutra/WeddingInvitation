@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxSpinnerService } from 'ngx-spinner';
 import { BaseConstants } from 'src/app/core/constants/base-constants';
 
 @Component({
@@ -17,7 +18,15 @@ export class LocationComponent implements OnInit {
   lat = 51.678418;
   lng = 7.809007;
 
+  constructor(private spinner: NgxSpinnerService) {}
+
   ngOnInit(): void {
+    this.spinner.show();
+
+    setTimeout(() => {
+      /** spinner ends after 5 seconds */
+      this.spinner.hide();
+    }, 1000);
     this.countdownTimer;
   }
 
@@ -38,5 +47,3 @@ export class LocationComponent implements OnInit {
     }
   }, 1000);
 }
-
-

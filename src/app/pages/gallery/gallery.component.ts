@@ -4,6 +4,7 @@ import {
   NgbSlideEvent,
   NgbSlideEventSource,
 } from '@ng-bootstrap/ng-bootstrap';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-gallery',
@@ -11,7 +12,6 @@ import {
   styleUrls: ['./gallery.component.css'],
 })
 export class GalleryComponent implements OnInit {
-  
   paused = false;
   unpauseOnArrow = false;
   pauseOnIndicator = false;
@@ -26,9 +26,16 @@ export class GalleryComponent implements OnInit {
 
   @ViewChild('carousel', { static: true }) carousel?: NgbCarousel;
 
-  constructor() {}
+  constructor(private spinner: NgxSpinnerService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.spinner.show();
+
+    setTimeout(() => {
+      /** spinner ends after 5 seconds */
+      this.spinner.hide();
+    }, 1000);
+  }
 
   togglePaused() {
     if (this.paused) {

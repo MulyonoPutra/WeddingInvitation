@@ -39,7 +39,7 @@
 .hour,
 .minute,
 .second {
-  font-family: "digital-font";
+  font-family: "Caveat";
   font-size: 50px;
 }
 
@@ -47,7 +47,7 @@
 .hour-text,
 .minute-text,
 .second-text {
- font-family: "Caveat";
+  font-family: "Caveat";
   font-size: 20px;
 }
 
@@ -81,8 +81,8 @@
 }
 
 .arrow-icons {
-  height: 30px;
-  width: 30px;
+  height: 15px;
+  width: 15px;
   margin-right: 10px;
   text-align: center;
   justify-content: center;
@@ -104,9 +104,8 @@
   font-size: 20px;
 }
 
-
 agm-map {
   height: 350px;
-    border: 0px solid !important;
+  border: 0px solid !important;
   border-radius: 20px;
 }

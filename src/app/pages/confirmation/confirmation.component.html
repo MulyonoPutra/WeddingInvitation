@@ -1,29 +1,55 @@
 <div class="container">
   <div class="bg-images">
     <h2 class="text mt-5">Konfirmasi Kehadiran</h2>
-
     &nbsp;
-    <!-- form -->
     <div class="container">
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"
-          >Email address</label
-        >
+      <!-- form input -->
+      <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+        <div class="form-group">
+          <input
+            name="name"
+            #name="ngModel"
+            [(ngModel)]="confirmationService.formData!.name"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            name="messages"
+            #messages="ngModel"
+            [(ngModel)]="confirmationService.formData!.messages"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+        <div class="form-group">
+          <select class="form-select" aria-label="Default select example" name="isPresent"
+              #isPresent="ngModel"
+              [(ngModel)]="confirmationService.formData!.isPresent">
+            <option *ngFor="let data of confirm" [ngValue]="data">{{data}}</option>
+          </select>
+        </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-secondary">Submit</button>
+        </div>
+      </form>
+
+<!--       <div class="mb-3">
         <input
-          type="email"
+          type="text"
           class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="name@example.com"
+          id="name"
+          placeholder="Name..."
         />
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label"
-          >Example textarea</label
-        >
         <textarea
+          type="text"
           class="form-control"
           id="exampleFormControlTextarea1"
           rows="3"
+          placeholder="Messages..."
         ></textarea>
       </div>
       <div class="btn-center">
@@ -32,13 +58,12 @@
         <button
           type="button"
           class="btn btn-secondary"
-          (click)="generateLink()"
+          (click)="whatsappHyperlink()"
         >
           Kirim ke Whatsapp
         </button>
-      </div>
+      </div> -->
     </div>
-    <!-- form -->
 
     &nbsp;
     <div class="container">
@@ -46,8 +71,7 @@
       <div class="card" style="width: 18rem">
         <div class="card-body">
           <h5 class="card-title"></h5>
-          <h6 class="card-subtitle mb-2 text-muted"></h6>
-          <p class="card-text"></p>
+          <app-confirmation-list></app-confirmation-list>
         </div>
       </div>
     </div>

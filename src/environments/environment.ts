@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: 'AIzaSyCBJb7C_0D0GEP5B6b_sI73u23lcdBRZWc',
+    authDomain: 'kelvin-studio-photography.firebaseapp.com',
+    databaseURL: 'https://kelvin-studio-photography.firebaseio.com',
+    projectId: 'kelvin-studio-photography',
+    storageBucket: 'kelvin-studio-photography.appspot.com',
+    messagingSenderId: '213167213460',
+    appId: '1:213167213460:web:5db5d4f0abf42a01ca9d81',
+    measurementId: 'G-W4HMY488Z5',
+  },
 };
 
 /*

@@ -13,6 +13,7 @@ import { AgmCoreModule } from '@agm/core';
 import { GalleryComponent } from './gallery/gallery.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,7 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'location', component: LocationComponent },
       { path: 'gallery', component: GalleryComponent },
+      { path: 'confirmation', component: ConfirmationComponent },
     ],
   },
 ];
@@ -34,6 +36,7 @@ const routes: Routes = [
     HomeComponent,
     LocationComponent,
     GalleryComponent,
+    ConfirmationComponent,
   ],
   imports: [
     NgbModule,

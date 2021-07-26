@@ -2,8 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-
 @font-face {
-    font-family: "digital-font";
-    src: url("/assets/fonts/digital-font.TTF");
+  font-family: "digital-font";
+  src: url("/assets/fonts/digital-font.TTF");
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: "Caveat";
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Caveat";
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: "Caveat";
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Caveat";
 }

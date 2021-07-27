@@ -1,6 +1,20 @@
-# WeddingInvitation
+# Online Wedding Invitation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+## With implements features
+
+- Images Gallery Slider
+- Countdown Timer
+- Integration with Google Maps
+- Attendance Confirmation
+- Hyperlink to Whatsapp Number
+
+## Developed using
+
+- Angular CLI version 12.0.0
+- Bootstrap v5.0
+- Maps Javascript API
+- Google Firestore
+
 
 ## Development server
 

@@ -39,7 +39,7 @@
 .hour,
 .minute,
 .second {
-  font-family: 'Lexend', sans-serif;
+  font-family: 'Lexend', sans-serif !important;
   font-size: 50px;
 }
 

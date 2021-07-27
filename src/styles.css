@@ -8,6 +8,10 @@
   src: url("/assets/fonts/digital-font.TTF");
 }
 
+* {
+  font-family: "Caveat";
+}
+
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   font-family: "Caveat";

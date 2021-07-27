@@ -53,6 +53,6 @@ export class ConfirmationComponent implements OnInit {
     let data = form.value;
     this.firestore.collection('confirmation').add(data);
     this.resetForm(form);
-    Swal.fire('Good job!', 'You clicked the button!', 'success');
+    Swal.fire('Thank you..', 'Your Messages has been sent!', 'success');
   }
 }

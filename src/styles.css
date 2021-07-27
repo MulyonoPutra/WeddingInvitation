@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap");
 
 @font-face {
   font-family: "digital-font";
@@ -29,3 +29,15 @@
   font-family: "Caveat";
 }
 
+.footer {
+  position: relative;
+  background-color: #ad892b;
+  background-image: linear-gradient(to right, #9e7e2b, #ffffff,#927427);
+  width: 100%;
+  clear: both;
+  bottom: 0;
+  height: 70px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}

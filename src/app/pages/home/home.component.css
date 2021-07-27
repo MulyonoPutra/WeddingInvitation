@@ -17,14 +17,15 @@
 .title {
   text-align: center;
   font-family: "Caveat";
-  font-size: 14px;
+  font-size: 11px !important;
   margin: 50px;
 }
+
 
 .title-name {
   text-align: center;
   font-family: "Caveat";
-  font-size: 14px;
+  font-size: 16px;
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -64,8 +65,8 @@
 }
 
 .icons {
-  height: 30px;
-  width: 30px;
+  height: 15px;
+  width: 15px;
   margin-right: 10px;
   text-align: center;
   justify-content: center;
@@ -93,13 +94,13 @@
   .title {
     text-align: center;
     font-family: "Caveat";
-    font-size: 14px;
+    font-size: 11px !important;
   }
 
   .title-2 {
     text-align: center;
     font-family: "Pacifico", cursive;
-    font-size: 14px;
+    font-size: 11px;
   }
 
   .top {

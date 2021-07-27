@@ -1,0 +1,21 @@
+.name {
+  font-family: "Caveat";
+  font-size: 14px;
+  color: gray;
+}
+
+.isPresent {
+  font-family: "Caveat";
+  font-size: 14px;
+  color: #daa520;
+}
+
+.messages {
+  font-family: "Caveat";
+  font-size: 18px;
+  text-align: left;
+}
+
+.card {
+  border-radius: 20px;
+}

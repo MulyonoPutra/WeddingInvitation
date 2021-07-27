@@ -1,16 +1,26 @@
-<table class="table table-hover">
-  <thead>
-    <th>Name</th>
-    <th>Messages</th>
-    <th>isPresent</th>
-    <th></th>
-  </thead>
-  <tbody>
-    <tr *ngFor="let emp of attendance">
-      <td>{{emp.name}}</td>
-      <td>{{emp.messages}}</td>
-      <td>{{emp.isPresent}}</td>
-      <td><a class="btn text-danger" ><i class="fa fa-trash"></i></a></td>
-    </tr>
-  </tbody>
-</table>
+<div class="container">
+  <div>
+    <div class="row mt-4" *ngFor="let emp of attendance">
+      <div class="card">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 bd-highlight">
+            <p class="name">{{ emp.name }}</p>
+          </div>
+          <div class="ms-auto p-2 bd-highlight">
+            <div>
+              <p class="isPresent">
+                {{ emp.isPresent }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex bd-highlight">
+          <div class="p-2 bd-highlight">
+            <p class="messages">{{ emp.messages }}</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  &nbsp;
+</div>
+

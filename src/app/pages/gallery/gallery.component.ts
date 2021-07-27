@@ -19,9 +19,11 @@ export class GalleryComponent implements OnInit {
   pauseOnFocus = true;
 
   images = [
-    'https://bit.ly/3x1ygP5',
-    'https://bit.ly/3BxFuOe',
-    'https://bit.ly/3zuv2VN',
+    'https://bit.ly/2TB0na3',
+    'https://bit.ly/3xhtBJ7',
+    'https://bit.ly/3l0QJck',
+    'https://bit.ly/3l5JiRb',
+    'https://bit.ly/3zD9bvn',
   ];
 
   @ViewChild('carousel', { static: true }) carousel?: NgbCarousel;

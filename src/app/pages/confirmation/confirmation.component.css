@@ -56,6 +56,16 @@ div.validation-error {
   margin-right: 50px;
 }
 
+.card-bg {
+  background: url("/assets/images/bg-web.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat repeat;
+  background-position: center;
+  background-size: cover;
+  border: 0px solid !important;
+}
+
 
 @media screen and (max-width: 768px) {
   .bg-images {

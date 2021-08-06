@@ -46,6 +46,7 @@ div.validation-error {
   margin-right: auto;
   border-radius: 20px;
   width: 100% !important;
+  overflow-y: scroll;
 }
 
 .text {
@@ -133,10 +134,8 @@ div.validation-error {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
     width: 100% !important;
     max-height: 500px;
-    overflow-x: scroll;
   }
 
 }

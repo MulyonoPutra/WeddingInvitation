@@ -5,9 +5,7 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./pages/wedding.module').then(
-        (m) => m.WeddingModule
-      ),
+      import('./pages/wedding.module').then((m) => m.WeddingModule),
   },
 ];
 

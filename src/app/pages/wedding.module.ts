@@ -15,7 +15,7 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 import { AgmCoreModule } from '@agm/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgxSpinnerModule } from "ngx-spinner";
+import { NgxSpinnerModule } from 'ngx-spinner';
 import { ConfirmationListComponent } from './confirmation/confirmation-list/confirmation-list.component';
 import { ConfirmationService } from '../core/service/confirmation.service';
 import { FormsModule } from '@angular/forms';
@@ -60,9 +60,6 @@ const routes: Routes = [
     }),
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
-  providers: [
-    ConfirmationService,
-    { provide: ToastrService },
-  ],
+  providers: [ConfirmationService, { provide: ToastrService }],
 })
 export class WeddingModule {}
